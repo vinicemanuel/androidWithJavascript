@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; user-scalable=0;" />
+    <title>JavaScript Interface</title>
+</head>
+<body style="background-color:#E6E6FA">
+<h1>JavaScript Interface</h1>
+<p id="mytext">JS view is controlled by Android code!!</p>
+<input type="button" value="android" onClick="openAndroidDialog()" />
+
+<script language="javascript">
+   function openAndroidDialog() {
+        android_app.androidLogDebug("valor vindo do JS")
+   }
+
+   function changeName(msg){
+    document.getElementById("mytext").innerHTML = msg;
+   }
+</script>
+</body>
+</html>
